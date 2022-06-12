@@ -1,4 +1,15 @@
-h1 {
-    color:blueviolet;
-    font-family: 'Ubuntu', sans-serif;
+:root {
+    --primary: #D02F41;
+    --secondary: #7B736C; 
+    --text-color: #FFF;
+    --text-secondary: #000;
+    --text-tertiary: #7B7B7B;
 }
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
