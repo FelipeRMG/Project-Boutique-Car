@@ -149,3 +149,55 @@ body {
 #service-3 {
     background-image: url("../img/service3.jpg");
 }
+/*Location*/
+#location {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), 
+        url("../img/car_workshop2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+
+#address, 
+#business-hours{
+    max-width: 40%;
+}
+
+#address {
+    display: flex;
+}
+
+#address i {
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: .5em;
+}
+
+#about-location{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#business-hours h3{
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: .2em;
+    font-size: 1.5em;
+
+}
+
+#business-hours table {
+text-align: right;
+    padding-left: .2em;
+    font-size: 1.1em;
+    
+}
+
+#business-hours th{
+    line-height: 1.5em;
+}
