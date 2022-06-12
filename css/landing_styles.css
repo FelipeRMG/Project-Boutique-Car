@@ -1,9 +1,9 @@
 :root {
     --primary: #D02F41;
-    --secondary: #7B736C; 
+    --secondary: #888484; 
     --text-color: #FFF;
     --text-secondary: #000;
-    --text-tertiary: #7B7B7B;
+    --text-tertiary: #555353;
 }
 
 * {
@@ -24,5 +24,79 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: var(--text-color)
+    color: var(--text-color);
+}
+
+#disclaimer h2,
+#disclaimer #other {
+    color: var(--primary);
+}
+
+#disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer ul {
+    margin-left: 2em;
+}
+
+#disclaimer .about-us {
+    font-size: 1.3em;
+    max-width: 350;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer #other {
+    margin-top: .4em;
+    font-weight: bold;
+}
+
+#schedule-form {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 25%;
+}
+
+#schedule-form p{
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label{
+    color: var(--text-tertiary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.btn:hover{
+    opacity: 1;
 }
