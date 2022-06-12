@@ -13,6 +13,9 @@
     box-sizing: border-box;
 }
 
+body {
+    padding-bottom: 500px;
+}
 /*Services Schedule*/
 
 #services-schedule {
@@ -99,4 +102,50 @@
 
 .btn:hover{
     opacity: 1;
+}
+
+/*Services*/
+#key-services h2{
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+
+.service .service-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#service-1 {
+    background-image: url("../img/service1.jpg");
+}
+
+#service-2 {
+    background-image: url("../img/service2.jpg");
+}
+
+#service-3 {
+    background-image: url("../img/service3.jpg");
 }
