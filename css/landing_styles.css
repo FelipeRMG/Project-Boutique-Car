@@ -43,11 +43,13 @@ body {
 
 #disclaimer ul {
     margin-left: 2em;
+    list-style-position: inside;
 }
 
 #disclaimer .about-us {
     font-size: 1.3em;
     max-width: 350;
+    text-align: center;
     font-weight: bold;
     margin-bottom: 1em;
 }
@@ -193,7 +195,7 @@ body {
 }
 
 #business-hours table {
-text-align: right;
+    text-align: center;
     padding-left: .2em;
     font-size: 1.1em;
     
@@ -297,4 +299,138 @@ text-align: right;
 
 #footer span{
     font-weight: bold;
+}
+
+/* Version Mobile */
+@media (max-width: 450px) {
+    /* Services Schedule */
+    #services-schedule {
+        flex-direction: column;
+        height: auto;
+        margin-left: 2em;
+    }
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2{
+        margin-bottom: .5em;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    #schedule-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /* Services */
+    .services {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .service {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /* Location */
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i {
+        margin: .3em 0
+    }
+
+    #business-hours {
+        max-width: 100%;
+    }
+    #business-hours table{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Other services */
+    .other-service {
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap: 0;
+    }
+
+    .other-service img { 
+        width: 100%;
+        margin: 2em 0;
+    }
+    #other-service-1 img {
+        order: 2;
+    }
+
+    #other-service-2 img{
+        display: none;
+    }
+
+    .other-service-description {
+        padding: 0;
+    }
+
+    /* Call to Action*/
+    #cta {
+        font-size: 1.2em;
+        text-align: center;
+        max-width: 100%;
+    }
+    #cta .btn {
+        width: 80%;
+    }
+
+}
+/*mobile tablet 768*/    
+@media (max-width: 780px) {
+    #services-schedule {
+        flex-direction: column;
+        height: auto;
+        margin-left: 2em;
+    }
+    #disclaimer {
+        padding: 3em;
+    }
+
+    #disclaimer h2{
+        margin-bottom: .5em;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    #schedule-form {
+        max-width: 50%;
+        margin-bottom: 2em;
+        padding-bottom: 2em;
+    }
+
+      /* Services */
+      .services {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .service {
+        max-width: 60%;
+        margin-bottom: 2em;
+    }
+
 }
